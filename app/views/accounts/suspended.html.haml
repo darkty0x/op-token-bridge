@@ -1,0 +1,22 @@
+.public-account-header
+  .public-account-header__image
+    = image_tag @account.header.default_url, class: 'parallax'
+  .public-account-header__bar
+    = link_to short_account_url(@account), class: 'avatar' do
+      = image_tag @account.avatar.default_url
+    .public-account-header__tabs
+      .public-account-header__tabs__name
+        %h1
+          = @account.username
+          %small
+            = acct(@account)
+      .public-account-header__tabs__tabs
+        .details-counters
+        .spacer
+        .public-account-header__tabs__tabs__buttons
+
+.grid
+  .column-0
+    .nothing-here.nothing-here--flexible= t('accounts.suspended')
+  .column-1
+    = render 'application/sidebar'
