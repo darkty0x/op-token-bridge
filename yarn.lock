@@ -1840,7 +1840,7 @@
     jest-diff "^25.2.1"
     pretty-format "^25.2.1"
 
-"@types/json-schema@*", "@types/json-schema@^7.0.8":
+"@types/json-schema@*", "@types/json-schema@^7.0.8", "@types/json-schema@^7.0.9":
   version "7.0.9"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.9.tgz#97edc9037ea0c38585320b28964dde3b39e4660d"
   integrity sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ==
@@ -2195,6 +2195,13 @@ ajv-errors@^1.0.0:
   resolved "https://registry.yarnpkg.com/ajv-errors/-/ajv-errors-1.0.1.tgz#f35986aceb91afadec4102fbd85014950cefa64d"
   integrity sha512-DCRfO/4nQ+89p/RK43i8Ezd41EqdGIU4ld7nGF8OQ14oc/we5rEntLCUa7+jrn3nn83BosfwZA0wb4pon2o8iQ==
 
+ajv-formats@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/ajv-formats/-/ajv-formats-2.1.1.tgz#6e669400659eb74973bbf2e33327180a0996b520"
+  integrity sha512-Wx0Kx52hxE7C18hkMEggYlEifqWZtYaRgouJor+WMdPnQyEK13vgEWyVNup7SoeeoLMsr4kf5h6dOW11I15MUA==
+  dependencies:
+    ajv "^8.0.0"
+
 ajv-keywords@^1.0.0:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/ajv-keywords/-/ajv-keywords-1.5.1.tgz#314dd0a4b3368fad3dfcdc54ede6171b886daf3c"
@@ -2204,6 +2211,13 @@ ajv-keywords@^3.1.0, ajv-keywords@^3.5.2:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/ajv-keywords/-/ajv-keywords-3.5.2.tgz#31f29da5ab6e00d1c2d329acf7b5929614d5014d"
   integrity sha512-5p6WTN0DdTGVQk6VjcEju19IgaHudalcfabD7yhDGeA6bcQnmL+CpveLJq/3hvfwd1aof6L386Ougkx6RfyMIQ==
+
+ajv-keywords@^5.0.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/ajv-keywords/-/ajv-keywords-5.1.0.tgz#69d4d385a4733cdbeab44964a1170a88f87f0e16"
+  integrity sha512-YCS/JNFAUyr5vAuhk1DWm1CBxRHW9LbJ2ozWeemrIqpbsqKjHVxYPyi5GC0rjZIT5JxJ3virVTS8wk4i/Z+krw==
+  dependencies:
+    fast-deep-equal "^3.1.3"
 
 ajv@^4.7.0:
   version "4.11.8"
@@ -2221,6 +2235,16 @@ ajv@^6.1.0, ajv@^6.10.0, ajv@^6.12.4, ajv@^6.12.5:
     fast-deep-equal "^3.1.1"
     fast-json-stable-stringify "^2.0.0"
     json-schema-traverse "^0.4.1"
+    uri-js "^4.2.2"
+
+ajv@^8.0.0, ajv@^8.8.0:
+  version "8.8.2"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.8.2.tgz#01b4fef2007a28bf75f0b7fc009f62679de4abbb"
+  integrity sha512-x9VuX+R/jcFj1DHo/fCp99esgGDWiHENrKxaCENuCxpoMCmAt/COCGVDwA7kleEpEzJjDnvh3yGoOuLu0Dtllw==
+  dependencies:
+    fast-deep-equal "^3.1.1"
+    json-schema-traverse "^1.0.0"
+    require-from-string "^2.0.2"
     uri-js "^4.2.2"
 
 ajv@^8.0.1:
@@ -3157,16 +3181,13 @@ compressible@~2.0.16:
   dependencies:
     mime-db ">= 1.43.0 < 2"
 
-compression-webpack-plugin@^6.1.1:
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/compression-webpack-plugin/-/compression-webpack-plugin-6.1.1.tgz#ae8e4b2ffdb7396bb776e66918d751a20d8ccf0e"
-  integrity sha512-BEHft9M6lwOqVIQFMS/YJGmeCYXVOakC5KzQk05TFpMBlODByh1qNsZCWjUBxCQhUP9x0WfGidxTbGkjbWO/TQ==
+compression-webpack-plugin@^9.1.2:
+  version "9.1.2"
+  resolved "https://registry.yarnpkg.com/compression-webpack-plugin/-/compression-webpack-plugin-9.1.2.tgz#55490e6eca44f93024c26a235ac28f8f938cdd9b"
+  integrity sha512-mRVfU0G9tlZhCN/DUQm4Kcq0QdZOYd6E2FeJUvKM9hTUUYtBffHNnfkGvUuZXfv/zPlVau4v7goMUkuDL/noBg==
   dependencies:
-    cacache "^15.0.5"
-    find-cache-dir "^3.3.1"
-    schema-utils "^3.0.0"
-    serialize-javascript "^5.0.1"
-    webpack-sources "^1.4.3"
+    schema-utils "^4.0.0"
+    serialize-javascript "^6.0.0"
 
 compression@^1.7.4:
   version "1.7.4"
@@ -8539,14 +8560,15 @@ scheduler@^0.19.1:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
 
-schema-utils@*, schema-utils@^3.0, schema-utils@^3.0.0, schema-utils@^3.1.0, schema-utils@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-3.1.1.tgz#bc74c4b6b6995c1d88f76a8b77bea7219e0c8281"
-  integrity sha512-Y5PQxS4ITlC+EahLuXaY86TXfR7Dc5lw294alXOq86JAHCihAIZfqv8nNCWvaEJvaC51uN9hbLGeV0cFBdH+Fw==
+schema-utils@*, schema-utils@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-4.0.0.tgz#60331e9e3ae78ec5d16353c467c34b3a0a1d3df7"
+  integrity sha512-1edyXKgh6XnJsJSQ8mKWXnN/BVaIbFMLpouRUrXgVq7WYne5kw3MW7UPhO44uRXQSIpTSXoJbmrR2X0w9kUTyg==
   dependencies:
-    "@types/json-schema" "^7.0.8"
-    ajv "^6.12.5"
-    ajv-keywords "^3.5.2"
+    "@types/json-schema" "^7.0.9"
+    ajv "^8.8.0"
+    ajv-formats "^2.1.1"
+    ajv-keywords "^5.0.0"
 
 schema-utils@^1.0.0:
   version "1.0.0"
@@ -8564,6 +8586,15 @@ schema-utils@^2.6.5:
   dependencies:
     "@types/json-schema" "^7.0.5"
     ajv "^6.12.4"
+    ajv-keywords "^3.5.2"
+
+schema-utils@^3.0, schema-utils@^3.0.0, schema-utils@^3.1.0, schema-utils@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-3.1.1.tgz#bc74c4b6b6995c1d88f76a8b77bea7219e0c8281"
+  integrity sha512-Y5PQxS4ITlC+EahLuXaY86TXfR7Dc5lw294alXOq86JAHCihAIZfqv8nNCWvaEJvaC51uN9hbLGeV0cFBdH+Fw==
+  dependencies:
+    "@types/json-schema" "^7.0.8"
+    ajv "^6.12.5"
     ajv-keywords "^3.5.2"
 
 scroll-behavior@^0.9.1:
