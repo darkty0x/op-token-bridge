@@ -102,7 +102,7 @@ group :development, :test do
   gem 'fabrication', '~> 2.22'
   gem 'fuubar', '~> 2.5'
   gem 'i18n-tasks', '~> 0.9', require: false
-  gem 'pry-byebug', '~> 3.9'
+  gem 'pry-byebug', '~> 3.10'
   gem 'pry-rails', '~> 0.3'
   gem 'rspec-rails', '~> 5.0'
 end
