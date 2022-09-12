@@ -1520,10 +1520,10 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.10.2.tgz#0798c03351f0dea1a5a4cabddf26a55a7cbee590"
   integrity sha512-IXf3XA7+XyN7CP9gGh/XB0UxVMlvARGEgGXLubFICsUMGz6Q+DU+i4gGlpOxTjKvXjkJDJC8YdqdKkDj9qZHEQ==
 
-"@rails/ujs@^7.0.1":
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/@rails/ujs/-/ujs-7.0.1.tgz#cb515d52c85be107908dd00822042f04e52cdea7"
-  integrity sha512-ZUkgsbz5KFLfBwjIQ2D/kvyq+2w5BuNnkUJf3940VVJxov9GECu6n2BSXUTmyNAx+R6JQdibzXBuR7nz3crZYw==
+"@rails/ujs@^7.0.4":
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/@rails/ujs/-/ujs-7.0.4.tgz#7fe5387d2d82b0547fdfc6667b424ec119c86b1e"
+  integrity sha512-UY9yQxBvtqXzXScslgPwZoQd16T0+z3P6BQS4lZDJFg5xVuMIgHkHQI6dhyWEt5l/qwbGaYX+YiZu6J+oxWPOw==
 
 "@restart/hooks@^0.3.26":
   version "0.3.27"
