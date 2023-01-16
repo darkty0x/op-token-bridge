@@ -111,7 +111,7 @@
     "mark-loader": "^0.1.6",
     "marky": "^1.2.2",
     "mini-css-extract-plugin": "^2.4.6",
-    "mkdirp": "^1.0.4",
+    "mkdirp": "^2.0.0",
     "npmlog": "^6.0.0",
     "object-assign": "^4.1.1",
     "object-fit-images": "^3.2.3",
