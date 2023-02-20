@@ -2689,10 +2689,10 @@ blueimp-load-image@^3.0.0:
   resolved "https://registry.yarnpkg.com/blueimp-load-image/-/blueimp-load-image-3.0.0.tgz#d71c39440a7d2f1a83e3e86a625e329116a51705"
   integrity sha512-Q9rFbd4ZUNvzSFmRXx9MoG0RwWwJeMjjEUbG7WIOJgUg22Jgkow0wL5b35B6qwiBscxACW9OHdrP5s2vQ3x8DQ==
 
-blurhash@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/blurhash/-/blurhash-1.1.4.tgz#a7010ceb3019cd2c9809b17c910ebf6175d29244"
-  integrity sha512-MXIPz6zwYUKayju+Uidf83KhH0vodZfeRl6Ich8Gu+KGl0JgKiFq9LsfqV7cVU5fKD/AotmduZqvOfrGKOfTaA==
+blurhash@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/blurhash/-/blurhash-2.0.5.tgz#efde729fc14a2f03571a6aa91b49cba80d1abe4b"
+  integrity sha512-cRygWd7kGBQO3VEhPiTgq4Wc43ctsM+o46urrmPOiuAe+07fzlSB9OJVdpgDL0jPqXUVQ9ht7aq7kxOeJHRK+w==
 
 bmp-js@^0.1.0:
   version "0.1.0"
